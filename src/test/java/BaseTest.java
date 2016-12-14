@@ -25,7 +25,7 @@ public class BaseTest {
     @Before
     public void preConfig () {
         System.setProperty("webdriver.gecko.driver", "/Users/Samarik/Documents/geckodriver");
-        System.setProperty("webdriver.chrome.driver", "C:\\Temp\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "/Users/Samarik/Documents/chromedriver");
         driver = getDriver();
         driver.manage().timeouts().implicitlyWait(Integer.parseInt(timeout), TimeUnit.SECONDS);
         driver.get(url);
